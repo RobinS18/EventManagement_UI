@@ -5,8 +5,15 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormGroup, FormControl, FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule,MatFormField } from '@angular/material/form-field';
+
 
 @NgModule({
+    exports: [
+      MatFormFieldModule,
+      MatFormField
+    ],
   declarations: [
     AppComponent,
   ],
@@ -15,7 +22,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormControl,
+    MatFormFieldModule,
+    MatFormField
   ],
   schemas:[
     CUSTOM_ELEMENTS_SCHEMA,

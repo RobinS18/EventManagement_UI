@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
 @Component({
   selector: 'app-log-in',
   templateUrl: './log-in.component.html',
@@ -10,7 +9,7 @@ export class LogInComponent {
 /**
  *
  */
-constructor(private route: ActivatedRoute) {debugger
+constructor(private route: ActivatedRoute) {
   var vk =8
 }
 }
