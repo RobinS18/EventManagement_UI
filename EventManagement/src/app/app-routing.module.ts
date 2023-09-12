@@ -4,15 +4,11 @@ import { LogInComponent } from './login/log-in/log-in.component';
 import { PageNotFoundComponent } from './login/page-not-found/page-not-found.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'/log-in',pathMatch:'full'},
-  {path:'log-in', component:LogInComponent,data: {
-    breadcrumb: {
-      label: 'Login',
-      info: 'Login',
-    },
-  }
-},
-{path:'**',component:PageNotFoundComponent},
+  {path:'LogIn', component:LogInComponent},
+  {path:'',redirectTo:'/LogIn',pathMatch:'full'},
+  {path:'404',component:PageNotFoundComponent},
+  {path:'**',redirectTo:'/404',pathMatch:'full'},
+
 ];
 
 @NgModule({

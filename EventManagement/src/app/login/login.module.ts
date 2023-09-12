@@ -9,8 +9,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
-    LogInComponent,
-    PageNotFoundComponent
+    //LogInComponent,
+    //PageNotFoundComponent
   ],
   imports: [
     CommonModule,
